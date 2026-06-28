@@ -88,3 +88,16 @@ Localized hubs: [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · 
 - i18n docs index: [i18n/README.md](i18n/README.md)
 - i18n coverage map: [i18n-coverage.md](i18n-coverage.md)
 - Project triage snapshot: [project-triage-snapshot-2026-02-18.md](project-triage-snapshot-2026-02-18.md)
+
+<!-- THOX-DOCS-BASELINE:START -->
+## THOX Documentation Baseline
+
+This documentation set is maintained for release readiness and operational clarity under THOX.ai LLC.
+
+- Tommy Xaypanya is CTO.
+- Craig Ross is CEO.
+- Keep setup, validation, release, and legal notes current with the implementation.
+- Preserve third-party notices and upstream license obligations when this repository includes external components.
+
+Copyright (c) 2026 THOX.ai LLC. All rights reserved unless a repository-specific license states otherwise.
+<!-- THOX-DOCS-BASELINE:END -->
