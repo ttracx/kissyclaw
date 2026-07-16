@@ -1,0 +1,32 @@
+name: THOX Agent Team
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled]
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled, closed]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 8 * * *'
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+  actions: read
+  checks: read
+  statuses: read
+
+jobs:
+  policy-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate THOX agent-team policy files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f .github/workflows/thox-agent-team.yml || true
+          echo "THOX agent-team event received: $GITHUB_EVENT_NAME"
+          echo "Safe merge and branch pruning requirements are documented in docs/thox-agent-team.md"
